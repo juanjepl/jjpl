@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="clipboard.min.js" defer></script>
+    <script src="interactive.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>¡Toma tus números!</h1>
+      <section class="options">
+        <div class="lot bono">
+          <img
+            src="https://www.loteriasyapuestas.es/f/loterias/estaticos/imagenes/topaz/cabecera_BonolotoAJ_mobile_topaz.png"
+            alt="Bonoloto"
+          />
+          <div class="numbers">
+            <input type="text" placeholder="-" id="bono-1" readonly />
+            <input type="text" placeholder="-" id="bono-2" readonly />
+            <input type="text" placeholder="-" id="bono-3" readonly />
+            <input type="text" placeholder="-" id="bono-4" readonly />
+            <input type="text" placeholder="-" id="bono-5" readonly />
+            <input type="text" placeholder="-" id="bono-6" readonly />
+          </div>
+          <button id="bono-button" onclick="print_bono()">¡Dámelo!</button>
+          <div class="numlist">
+            <h2 class="hidden">Tus números</h2>
+          </div>
+        </div>
+
+        <div class="lot primi">
+          <img
+            src="https://www.loteriasyapuestas.es/f/loterias/estaticos/imagenes/topaz/cabecera_PrimitivaAJ_mobile_topaz.png"
+            alt="Primitiva"
+          />
+          <div class="numbers">
+            <input type="text" placeholder="-" id="primi-1" readonly />
+            <input type="text" placeholder="-" id="primi-2" readonly />
+            <input type="text" placeholder="-" id="primi-3" readonly />
+            <input type="text" placeholder="-" id="primi-4" readonly />
+            <input type="text" placeholder="-" id="primi-5" readonly />
+            <input type="text" placeholder="-" id="primi-6" readonly />
+            <div class="space"></div>
+            <input type="text" placeholder="-" id="primi-r1" readonly />
+          </div>
+          <button id="primi-button" onclick="print_primi()">¡Dámelo!</button>
+          <div class="numlist">
+            <h2 class="hidden">Tus números</h2>
+          </div>
+        </div>
+
+        <div class="lot euro">
+          <img
+            src="https://www.loteriasyapuestas.es/f/loterias/estaticos/imagenes/topaz/cabecera_EuromillonesAJ_mobile_topaz.png"
+            alt="Euromillones"
+          />
+          <div class="numbers">
+            <input type="text" placeholder="-" id="euro-1" readonly />
+            <input type="text" placeholder="-" id="euro-2" readonly />
+            <input type="text" placeholder="-" id="euro-3" readonly />
+            <input type="text" placeholder="-" id="euro-4" readonly />
+            <input type="text" placeholder="-" id="euro-5" readonly />
+            <div class="space"></div>
+            <input type="text" placeholder="-" id="euro-s1" readonly />
+            <input type="text" placeholder="-" id="euro-s2" readonly />
+          </div>
+          <button id="euro-button" onclick="print_euro()">¡Dámelo!</button>
+          <div class="numlist">
+            <h2 class="hidden">Tus números</h2>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

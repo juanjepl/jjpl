@@ -1,0 +1,183 @@
+html,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --bono-color: #758727;
+  --primi-color: #518953;
+  --euro-color: #2a2f59;
+  --text-color: #2b2b2b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 0;
+}
+
+h1 {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: thin;
+  font-size: 1.5 rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.lot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 3em 1em;
+}
+
+.lot img {
+  width: 200px;
+  height: 50px;
+}
+
+.numbers {
+  margin: 1em 0;
+}
+
+.lot button {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.lot button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.bono button {
+  background-color: var(--bono-color);
+}
+
+.primi button {
+  background-color: var(--primi-color);
+}
+
+.euro button {
+  background-color: var(--euro-color);
+}
+
+.numbers {
+  display: flex;
+  margin: 1.5em 0;
+}
+
+input {
+  border: 3px solid gray;
+  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  margin: 3px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bono input {
+  border-color: var(--bono-color);
+  color: var(--bono-color);
+}
+
+.primi input {
+  border-color: var(--primi-color);
+  color: var(--primi-color);
+}
+
+.euro input {
+  border-color: var(--euro-color);
+  color: var(--euro-color);
+}
+
+.space {
+  width: 15px;
+}
+
+.numlist {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.num {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 5px;
+}
+
+.num:hover {
+  background-color: #f6f6f6;
+}
+
+.num span {
+  color: var(--text-color);
+  font-family: monospace, Courier;
+  font-size: 1.1rem;
+}
+
+.num button {
+  font-size: 0.7rem;
+  font-weight: thin;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90px;
+  height: 30px;
+  padding: 0;
+  color: #8a8a8a;
+  background-color: #eaeaea;
+}
+
+.bono .num button:hover {
+  background-color: var(--bono-color);
+  color: #fff;
+}
+
+.primi .num button:hover {
+  background-color: var(--primi-color);
+  color: #fff;
+}
+
+.euro .num button:hover {
+  background-color: var(--euro-color);
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
