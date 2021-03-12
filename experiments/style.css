@@ -120,9 +120,9 @@ input {
   color: var(--euro-color);
 }
 
-.space {
+/* .space {
   width: 15px;
-}
+} */
 
 .numlist {
   display: flex;
@@ -132,6 +132,10 @@ input {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: var(--text-color);
+}
+
+.numlist h2:only-child {
+  display: none;
 }
 
 .num {
@@ -178,6 +182,7 @@ input {
   color: #fff;
 }
 
-.hidden {
-  display: none;
+#primi-r1,
+#euro-s1 {
+  margin-left: 20px;
 }

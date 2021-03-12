@@ -5,10 +5,6 @@ new ClipboardJS('.copyable')
 const getRandom = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min)
 
-let isBonoInit = false
-let isPrimiInit = false
-let isEuroInit = false
-
 const get_bono_numbers = () => {
   let luckyNumbers = new Set()
   while (luckyNumbers.size < 6) {
@@ -43,12 +39,6 @@ const get_euro_numbers = () => {
 
 const print_bono = () => {
   const bono = get_bono_numbers()
-  if (!isBonoInit) {
-    const title = document.querySelector('.bono h2')
-    title.classList.remove('hidden')
-    isBonoInit = true
-  }
-
   for (let i = 0; i < 6; i++) {
     document.getElementById(`bono-${i + 1}`).value = bono[i]
   }
@@ -64,12 +54,6 @@ const print_bono = () => {
 
 const print_primi = () => {
   const primi = get_primi_numbers()
-  if (!isPrimiInit) {
-    const title = document.querySelector('.primi h2')
-    title.classList.remove('hidden')
-    isPrimiInit = true
-  }
-
   for (let i = 0; i < 6; i++) {
     document.getElementById(`primi-${i + 1}`).value = primi[0][i]
   }
@@ -88,12 +72,6 @@ const print_primi = () => {
 
 const print_euro = () => {
   const euro = get_euro_numbers()
-  if (!isEuroInit) {
-    const title = document.querySelector('.euro h2')
-    title.classList.remove('hidden')
-    isEuroInit = true
-  }
-
   for (let i = 0; i < 5; i++) {
     document.getElementById(`euro-${i + 1}`).value = euro[0][i]
   }
