@@ -120,10 +120,6 @@ input {
   color: var(--euro-color);
 }
 
-/* .space {
-  width: 15px;
-} */
-
 .numlist {
   display: flex;
   flex-direction: column;
